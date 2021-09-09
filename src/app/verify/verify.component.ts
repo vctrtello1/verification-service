@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerifyComponent implements OnInit {
 
+  verified = false;
+
   constructor() { }
 
   ngOnInit(): void {

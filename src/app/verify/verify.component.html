@@ -1,2 +1,7 @@
-<div id="successful-result" >Successful verification</div>
-<div id="not-successful-result">Verification link has expired</div>
+<div *ngIf="verified; then isVerified else notVerified"></div>
+<ng-template #isVerified>
+    <div id="successful-result">Successful verification</div>
+</ng-template>
+<ng-template #notVerified>
+    <div id="not-successful-result">Verification link has expired</div>
+</ng-template>
